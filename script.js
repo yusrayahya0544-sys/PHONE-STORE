@@ -1,4 +1,4 @@
-[11/06/2026 12:58] Yusra: // ========== PRODUCT DATABASE ==========
+ // ========== PRODUCT DATABASE ==========
 const products = [
     { id: 1, name: "iPhone 17e", brand: "Apple", price: 25000, image: "iphone 17e.jpg", description: "Latest A18 chip, 48MP camera" },
     { id: 2, name: "Galaxy S26 Ultra", brand: "Samsung", price: 30000, image: "Galaxy S26 Ultra.jpg", description: "200MP camera, S Pen included" },
@@ -98,7 +98,7 @@ function displayCart() {
     var total = 0;
     var cartHtml = '<div class="cart-items">';
     for (var i = 0; i < cart.length; i++) {
-[11/06/2026 12:58] Yusra: var item = cart[i];
+ var item = cart[i];
         var itemTotal = item.price * item.quantity;
         total = total + itemTotal;
         cartHtml = cartHtml + '<div class="cart-item" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #ccc;">' +
@@ -168,7 +168,7 @@ function filterProducts() {
         var matchBrand = brandFilter === 'all' || p.brand === brandFilter;
         var matchPrice = true;
         if (priceFilter !== 'all') {
-[11/06/2026 12:58] Yusra: if (priceFilter === '0-10000') matchPrice = p.price <= 10000;
+ if (priceFilter === '0-10000') matchPrice = p.price <= 10000;
             else if (priceFilter === '10000-20000') matchPrice = p.price >= 10000 && p.price <= 20000;
             else if (priceFilter === '20000-30000') matchPrice = p.price >= 20000 && p.price <= 30000;
             else if (priceFilter === '30000+') matchPrice = p.price >= 30000;
