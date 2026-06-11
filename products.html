@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - PhoneStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">📱</span>
+            <span class="logo-text">PhoneStore<span class="logo-highlight">.ET</span></span>
+        </div>
+        <div class="nav-toggle" onclick="toggleNav()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="products.html" class="active">📦 Products</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="cart.html">🛒 Cart <span id="cartCount2" class="cart-badge">0</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">📱 All Smartphones</h2>
+            <p id="productCount" class="product-count">Showing 0 products</p>
+        </div>
+        
+        <div class="filter-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search by phone name..." onkeyup="filterProducts()">
+            </div>
+            <div class="filter-group">
+                <select id="brandFilter" onchange="filterProducts()">
+                    <option value="all">All Brands</option>
+                    <option value="Apple">🍎 Apple</option>
+                    <option value="Samsung">⭐ Samsung</option>
+                    <option value="Xiaomi">🔥 Xiaomi</option>
+                    <option value="Google">🔵 Google Pixel</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="priceFilter" onchange="filterProducts()">
+                    <option value="all">All Prices</option>
+                    <option value="0-10000">Under 10,000 ETB</option>
+                    <option value="10000-20000">10,000 - 20,000 ETB</option>
+                    <option value="20000-30000">20,000 - 30,000 ETB</option>
+                    <option value="30000+">30,000+ ETB</option>
+                </select>
+            </div>
+            <button class="clear-filters" onclick="clearFilters()">✖️ Clear All</button>
+        </div>
+
+        <div class="products-grid" id="all-products"></div>
+        <div id="noResults" class="no-results" style="display: none;">😞 No phones found. Try different filters!</div>
+    </div>
+
+
+<h1>you can see some of them as a sample</h1>
+
+    
+    <code>&lt; this is iphone 15 &gt;</code>
+    <img src="img/iphone 15 pro.jpg" alt="this is iphone 15 " width="500" height="500" title="">
+
+     <code>&lt; this is sumsung galaxy A15 &gt;</code>
+    <img src="img/Samsung Galaxy A15.jpg" alt="this is sumsung galaxy A15 " width="500" height="500" title=""> <br>
+
+     <code>&lt;this is iphone 17e &gt;</code>
+    <img src="img/iphone 17e.jpg" alt="this is iphone 17e " width="500" height="500" title="">
+
+     <code>&lt;this is galaxy s26 ultra &gt;</code>
+    <img src="img/Galaxy S26 Ultra.jpg" alt="this is galaxy s26 ultra " width="500" height="500" title=""> <br>
+
+     <code>&lt; this is nothing phone 3 &gt;</code>
+    <img src="img/Nothing phone 3.jpg" alt="this is nothing phone 3 " width="500" height="500" title="">
+
+     <code>&lt;this is xiaomi 17 ultra &gt;</code>
+    <img src="img/Xiaomi 17 Ultra.jpg " alt="this is xiaomi 17 ultra" width="500" height="500" title=""> <br>
+
+     <code>&lt;this is sumsung galaxy m14&gt;</code>
+    <img src="img/Samsung Galaxy M14.jpg" alt="this is sumsung galaxy m14" width="500" height="500" title="">
+    
+     <code>&lt; this is google pixel 9 pro &gt;</code>
+    <img src="img/Google pixel 9 pro.jpg" alt="this is google pixel 9 pro " width="500" height="500" title="">
+
+    <p> <strong>we have not only this phone but many more!</strong> contact us to see our full catalog-we have devices from apple,ssmsung,google,and more. New arrivals every week!</p>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PhoneStore.ET</h4>
+                <p>Your trusted smartphone partner in Ethiopia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 around dawe masjid,in kemise</p>
+                <p>📞 +251-930-613306</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PhoneStore Ethiopia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
