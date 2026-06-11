@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - PhoneStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">📱</span>
+            <span class="logo-text">PhoneStore<span class="logo-highlight">.ET</span></span>
+        </div>
+        <div class="nav-toggle" onclick="toggleNav()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">🏠 Home</a></li>
+            <li><a href="products.html">📦 Products</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="cart.html" class="active">🛒 Cart <span id="cartCount5" class="cart-badge">0</span></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🛒 Your Shopping Cart</h2>
+        </div>
+        
+        <div id="cartContainer" class="cart-container">
+            <div class="empty-cart" style="text-align: center; padding: 4rem;">
+                <h3>Your cart is empty</h3>
+                <p>Add some phones to get started!</p>
+                <button class="btn-primary" onclick="location.href='products.html'">Browse Products</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PhoneStore.ET</h4>
+                <p>Your trusted smartphone partner in Ethiopia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 dawe masjid, kemise</p>
+                <p>📞 +251-930-613306</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PhoneStore Ethiopia</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

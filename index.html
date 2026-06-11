@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneStore | Smartest Phone Shop in Ethiopia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <span class="logo-icon">📱</span>
+            <span class="logo-text">PhoneStore<span class="logo-highlight">.ET</span></span>
+        </div>
+        <div class="nav-toggle" onclick="toggleNav()">☰</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html" class="active">🏠 Home</a></li>
+            <li><a href="products.html">📦 Products</a></li>
+            <li><a href="contact.html">📞 Contact</a></li>
+            <li><a href="about.html">ℹ️ About</a></li>
+            <li><a href="cart.html">🛒 Cart <span id="cartCount" class="cart-badge">0</span></a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Smartest Phones<span class="hero-accent">. Smartest Prices</span></h1>
+            <p class="hero-subtitle">Get genuine smartphones in Ethiopia with 1-year warranty and free delivery in kemise</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="location.href='products.html'">🛍️ Shop Now</button>
+                <button class="btn-secondary" onclick="scrollToFeatured()">👇 View Offers</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat"><span class="stat-number">500+</span><span class="stat-label">Happy Customers</span></div>
+            <div class="stat"><span class="stat-number">24/7</span><span class="stat-label">Support</span></div>
+            <div class="stat"><span class="stat-number">100%</span><span class="stat-label">Genuine</span></div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🔥 Featured Phones</h2>
+            <a href="products.html" class="view-all">View All →</a>
+        </div>
+        <div class="products-grid" id="featured-products"></div>
+
+        <div class="features-section">
+            <div class="feature-card">
+                <div class="feature-icon">🚚</div>
+                <h3>Free Delivery</h3>
+                <p>Free delivery in kemise on orders over 5,000 ETB</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✅</div>
+                <h3>1-Year Warranty</h3>
+                <p>All phones come with official manufacturer warranty</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💳</div>
+                <h3>Flexible Payment</h3>
+                <p>Cash on delivery or bank transfer available</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔧</div>
+                <h3>Expert Support</h3>
+                <p>After-sales support from tech experts</p>
+            </div>
+        </div>
+
+        <div class="trust-section">
+            <div class="trust-quote">⭐ ⭐ ⭐ ⭐ ⭐</div>
+            <div class="trust-name">✨ Mus'ab Yahya ✨</div>
+            <p class="trust-text">"An amazing and kind person whom we deeply trust. Mus'ab has a genuine passion for technology, and his dedication to his customers is truly inspiring. Every interaction with Mus'ab is built on trust and honesty."</p>
+            <div class="trust-badge">TRUSTED SELLER</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>PhoneStore.ET</h4>
+                <p>Your trusted smartphone partner in Ethiopia since 2024</p>
+
+                </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 arround dawe masjik, in kemise</p>
+                <p>📞 +251-930-613306</p>
+                <p>💬 Telegram: @mus'ab</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 PhoneStore Ethiopia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
