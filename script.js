@@ -1,4 +1,4 @@
-[11/06/2026 12:05] Yusra: // ========== PRODUCT DATABASE ==========
+ // ========== PRODUCT DATABASE ==========
 const products = [
     { id: 1, name: "iPhone 17e", brand: "Apple", price: 25000, image: "iphone 17e.jpg", description: "Latest A18 chip, 48MP camera" },
     { id: 2, name: "Galaxy S26 Ultra", brand: "Samsung", price: 30000, image: "Galaxy S26 Ultra.jpg", description: "200MP camera, S Pen included" },
@@ -94,7 +94,7 @@ function displayCart() {
         const item = cart[i];
         const itemTotal = item.price * item.quantity;
         total += itemTotal;
-[11/06/2026 12:05] Yusra: cartHtml += '<div class="cart-item" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap;">' +
+        cartHtml += '<div class="cart-item" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap;">' +
             '<div style="display: flex; align-items: center; gap: 1rem;">' +
             '<img src="' + item.image + '" alt="' + item.name + '" style="width: 60px; height: 60px; object-fit: contain; border-radius: 10px;">' +
             '<div><strong>' + item.name + '</strong><br><small>' + item.price.toLocaleString() + ' ETB each</small></div>' +
@@ -154,7 +154,7 @@ function filterProducts() {
         const p = products[i];
         const matchSearch = p.name.toLowerCase().includes(searchTerm);
         const matchBrand = brandFilter === 'all' || p.brand === brandFilter;
-[11/06/2026 12:05] Yusra: let matchPrice = true;
+ let matchPrice = true;
         if (priceFilter === '0-10000') matchPrice = p.price <= 10000;
         else if (priceFilter === '10000-20000') matchPrice = p.price >= 10000 && p.price <= 20000;
         else if (priceFilter === '20000-30000') matchPrice = p.price >= 20000 && p.price <= 30000;
